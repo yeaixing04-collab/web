@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-CH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first web</title>
+  </head>
+  <style>
+    body {
+      margin: 0px;
+      height: 100vh;
+      background-color: #eee;
+      background-image: url("https://i0.hdslb.com/bfs/new_dyn/d9d442bdef15a6fbd5d547877221ec6c237031191.jpg@714w_536h_1c_1s.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .flex {
+      display: flex;
+    }
+    .baise {
+      background-color: white;
+    }
+    .flex1 {
+      flex: 1;
+    }
+    .column {
+      flex-direction: column;
+    }
+    .centerx {
+      align-items: center;
+    }
+    .centery {
+      justify-content: center;
+    }
+    .pos {
+      position: fixed;
+    }
+    .mag8 {
+      margin: 8px;
+    }
+    .magr {
+      margin-right: 8px;
+    }
+    .magt {
+      margin-top: 8px;
+    }
+    .yinying {
+      box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .pos {
+      position: sticky;
+      top: 0;
+    }
+    .opa {
+      opacity: 0.5;
+      /* 不透明度 */
+    }
+    .fenkai {
+      justify-content: space-between;
+    }
+  </style>
+  <body class="flex mag8">
+    <!-- 侧边框 -->
+    <div
+      class="flex column baise yinying fenkai"
+      style="width: 200px; opacity: 0.7"
+    >
+      <!-- 头像栏 -->
+      <div class="flex centerx column">
+        <div class="flex column centerx" style="margin: 20px; line-height: 1px">
+          <img
+            src="https://i0.hdslb.com/bfs/new_dyn/dd5aca5a29872209405e31abb81af52e237031191.jpg@714w_536h_1c_1s.webp"
+            alt="初音未来"
+            width="90%"
+          />
+          <p>name:xxxx</p>
+          <p>age:xxxx.xx.xx</p>
+        </div>
+      </div>
+      <!-- 文字栏 -->
+      <div class="flex column centerx centery">
+        呜呜呜！！！！真的不知道要加什么
+        <img
+          src="https://i0.hdslb.com/bfs/new_dyn/a8f02e997b75ff3a68db6690c217af8e237031191.jpg@186w_248h_1c_1s.webp"
+          alt=""
+        />
+      </div>
+      <!-- 联系栏 -->
+      <div
+        class="flex centerx fenkai"
+        style="line-height: 1px; text-indent: 10px"
+      >
+        <div class="flex column">
+          <p>企鹅:xxxxxxxxx</p>
+          <p>MCUID:xxxxxxx</p>
+        </div>
+        <div class="flex1">
+          <img
+            src="https://i0.hdslb.com/bfs/new_dyn/83144d7a46cb961bbca81224dc3c7011237031191.png@169w_226h_1c_1s.webp"
+            alt=""
+            width="50px"
+            height="50px"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- 右侧主体 -->
+    <div class="flex1 column" style="overflow: auto">
+      <!-- 上边框 -->
+      <div
+        class="baise opa yinying pos flex centery centerx"
+        style="height: 125px"
+      >
+        <p style="height: 50%; font-size: 30px">广告位招租!!!!</p>
+      </div>
+      <!-- 栏目 -->
+      <div class="flex1 flex">
+        <!-- 项目列表 -->
+        <div class="flex column centerx centery" style="flex: 5">
+          <!-- 项目组 -->
+          <div
+            class="flex baise opa yinying magt"
+            style="height: 400px; width: 800px"
+          ></div>
+          <div
+            class="flex baise opa yinying magt"
+            style="height: 400px; width: 800px"
+          ></div>
+          <div
+            class="flex baise opa yinying magt"
+            style="height: 400px; width: 800px"
+          ></div>
+          <div
+            class="flex baise opa yinying magt"
+            style="height: 400px; width: 800px"
+          ></div>
+          <div
+            class="flex baise opa yinying magt"
+            style="height: 400px; width: 800px"
+          ></div>
+        </div>
+        <!-- git -->
+        <div class="baise opa yinying magt" style="flex: 1"></div>
+      </div>
+      <!-- 底边栏 -->
+      <div class="baise opa yinying magt" style="height: 50px"></div>
+    </div>
+  </body>
+</html>
